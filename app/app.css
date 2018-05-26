@@ -1,0 +1,13 @@
+* {
+    font-family: 'Jura', sans-serif;
+}
+
+.widgets-area {
+    background-color: mediumseagreen;
+
+}
+
+.widgets-area__item {
+    width: 33%;
+    padding: 15px;
+}

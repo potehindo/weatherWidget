@@ -1,0 +1,61 @@
+.weather-items {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+    height: 276px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.weather-items__item {
+    width: 33%;
+    display: inline-block;
+}
+
+
+
+
+.small-weather-item {
+    display: grid;
+    grid-template-columns: [col1-start] 50%  [col2-start] 50% [col2-end];
+    grid-template-rows: [row1-start] 20px [row2-start] 50px [row3-start] 30px [row4-start] 30px [row4-end];
+}
+
+.small-weather-item__time {
+    grid-column: col1-start / col2-end;
+    grid-row: row1-start;
+    text-align: center;
+    font-weight: 600;
+}
+
+.small-weather-item__icon {
+    grid-column: col1-start / col2-end;
+    grid-row: row2-start;
+    text-align: center;
+}
+
+.small-weather-item__temperature {
+    grid-column: col1-start / col2-end;
+    grid-row: row3-start;
+    text-align: center;
+    align-self: center;
+    color: tomato;
+    font-weight: 600;
+}
+
+.small-weather-item__wind-speed {
+    grid-column: col1-start / col2-start;
+    grid-row: row4-start;
+    text-align: center;
+    align-self: center;
+    font-size: 0.8em;
+}
+
+.small-weather-item__dew-point {
+    grid-column: col2-start / col2-end;
+    grid-row: row4-start;
+    text-align: center;
+    align-self: center;
+    font-size: 0.8em;
+}
+

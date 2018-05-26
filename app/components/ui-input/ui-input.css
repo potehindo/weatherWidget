@@ -1,0 +1,18 @@
+.ui-input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    transition: border 0.5s;
+    width: 100%;
+}
+
+.ui-input:focus {
+    border: none;
+    border-bottom: 2px solid black;
+    transition: border 0.5s;
+    outline: none;
+}
+

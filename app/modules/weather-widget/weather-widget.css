@@ -1,0 +1,50 @@
+.weather-widget {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.weather-widget__search {
+    margin-bottom: 10px;
+}
+
+.weather-widget__search .ui-input {
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+.current-weather {
+    display: grid;
+    grid-template-columns: [col1-start] 50%  [col2-start] 25%  [col3-start] 25% [col3-end];
+    grid-template-rows: [row1-start] 70px [row2-start] 30px [row2-end];
+}
+
+.current-weather__icon {
+    grid-column: col1-start / col2-start;
+    grid-row: row1-start / row2-end;
+    text-align: center;
+}
+
+.current-weather__temperature {
+    font-size: 60px;
+    font-weight: 600;
+    grid-column: col2-start / col3-end;
+    grid-row: row1-start;
+    text-align: center;
+    align-self: center;
+    color: tomato;
+}
+
+.current-weather__wind-speed {
+    grid-column: col2-start;
+    grid-row: row2-start;
+    text-align: center;
+}
+
+.current-weather__dew-point {
+    grid-column: col3-start;
+    grid-row: row2-start;
+    text-align: center;
+}
