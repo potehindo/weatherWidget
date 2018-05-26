@@ -1,2 +1,2 @@
 # weatherWidget
-[Alt text](images/example.png?raw=true "виджет погоды")
+<img src="/images/example.png" width="350"/>
